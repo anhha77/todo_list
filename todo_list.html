@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/todo_list.css">
+    
+</head>
+<body>
+    <main class="project-todo-list">
+        <div class="heading-contain">
+            <h1>Project Todo List</h1>
+        </div>
+        
+        <div class="todo-list-contain">
+            <h1 class="heading-todo-list">Todo List
+                <span class="text">Get things done, one item at a time</span>
+            </h1>
+            
+            <ul class="task-list">
+                <li>
+                    <span class="label">Learn Javascript</span>
+                    <div class="btn-contain">
+                        <input type="checkbox" class="btn-action btn-action-done">
+                        <button class="btn-action btn-action-remove">✖</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="label">Code a todo list</span>
+                    <div class="btn-contain">
+                        <input type="checkbox" class="btn-action btn-action-done">
+                        <button class="btn-action btn-action-remove">✖</button>
+                    </div>
+                </li>
+            </ul>
+    
+            <div class="filter-contain">
+                <label for="filter" class="filter-label">Show incompleted tasks only</label>
+                <input type="checkbox" id="filter">
+            </div>
+    
+            <div class="form-contain">
+                <label for="form-input" class="form-label">Add to the todo list</label>
+                <input type="text" id="form-input">
+                <button type="submit" class="btn-form" id="add-item">Add item</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/todo_list.js" async></script>
+</body>
+</html>
